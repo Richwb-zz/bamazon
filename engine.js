@@ -22,7 +22,6 @@ function connectToDB(){
 
 // Queries the Database and gets information from all the products
 function displayProducts(client, prompt){
-	console.log(prompt);
 	var display = {};
 	var connect = connectToDB();
 	connect.query("Select * FROM products", function(error, results){
@@ -124,7 +123,6 @@ function updateProduct(connect, newStock, itemId){
 		}
 
 		connect.end();
-		displayProducts("manager");
 	});
 }
 
