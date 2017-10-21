@@ -137,6 +137,7 @@ function addProduct(input){
 		console.log(input.newproductname + " has been added to the system");
 		connect.end();
 	});
+	
 }
 
 function managerActionProcess(answer,list=""){
